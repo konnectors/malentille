@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "name": "Ma lentille",
   "type": "konnector",
   "language": "node",
@@ -8,7 +8,7 @@
   "source": "git://github.com/konnectors/malentille.git",
   "editor": "Cozy",
   "vendor_link": "https://www.malentille.com/authentification",
-  "categories": ["other"],
+  "categories": ["shopping"],
   "fields": {
     "login": {
       "type": "text"
