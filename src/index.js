@@ -25,7 +25,7 @@ const request = requestFactory({
   jar: true
 })
 
-const vendor = 'ma-lentille'
+const vendor = 'Digital Eyewear'
 const baseUrl = 'https://www.malentille.com/' //authentification?back=my-account'
 
 module.exports = new BaseKonnector(start)
