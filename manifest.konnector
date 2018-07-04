@@ -85,5 +85,6 @@
       }
     }
   },
+  "banksTransactionRegExp": "\\bdigital eyewear\\b",
   "manifest_version": "2"
 }
