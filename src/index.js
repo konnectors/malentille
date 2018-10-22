@@ -108,6 +108,7 @@ function parseDocuments($) {
   // console.log($('div#bloc-history tbody tr').text())
   return docs.map(doc => ({
     ...doc,
+    date: doc.date.toDate(),
     // the saveBills function needs a date field
     // even if it is a little artificial here (these are not real bills)
     currency: '€',
