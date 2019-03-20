@@ -5,7 +5,7 @@
   "language": "node",
   "icon": "icon.png",
   "slug": "malentille",
-  "source": "git://github.com/konnectors/malentille.git",
+  "source": "git@github.com:konnectors/malentille.git",
   "editor": "Cozy",
   "vendor_link": "https://www.malentille.com/authentification",
   "categories": [
