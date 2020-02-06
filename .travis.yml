@@ -1,9 +1,9 @@
 language: node_js
 node_js:
-- '8'
+- '12'
 env:
   global:
-  - DEPLOY_REPOSITORY="git@github.com:konnectors/malentille.git"
+  # REGISTRY_TOKEN(editor=cozy, app=malentille)
   - secure: SMzSr7nKgWJC8ldpTbXmsRHhH55GLYeg+CNQrkE3c5t17dZMz47GBsx5N+TGnAKkTu/NBiEO619b71GZUgbsz0Nxid2iAyV3icraae3K+a7Hhr7oyFVZE+RyGrS3YDV5P4C3oEyYex1OW1OQvz/TIeaeBuczPfZ+ADKYy5m59hpk6Ra/Ch+/G5cVJoT+3av5LmGiuH3cipxy8L1Obl1YgfxrhrBFie8ZZiLexAJwvqCBU8tQco1mXdWr0XzykNEXhR9ZDiUzKt/zZAnL6Ptd+7IH93/DQDf5kXRO1eSjPp/6dhG5+tdcatMnwvSDTq2J8ZYAMeG4m82PX6RtMq6FC4MjxSBnLISslqgwhJXkM2HkfBWsaQsfvGp9y1yBFP4RNTGSoHejMQ/bnTWF6jnDH4I2GoU9mh0Fja0iFVARsudQMIJqVqawqv2jaNIiNfyxzqvpHzppnTj9qGefSFYBfBzIvIKJ1CWR5nGRwyUb6QN9nmG/EB7i08xD0ZyikC8WlNm6DpKafF3FoSXtM5ppQ7lEre/2dc15UF6VSr2PcaRrd+ouOGt067dgfGfWloq1gNh3w9jUvGxRauVwJdbHK3NpmaTR/nVTguz0Aws6JBNhZTg8oyxVzrvHUDhnCWTnc2jenGT8nyVn7JPyxfGiISEpV12b3zyUxsIwgvnomas=
 cache:
   yarn: true
@@ -12,11 +12,10 @@ cache:
 branches:
   except:
   - build
-  - latest
+  - build-debug
 script:
 - yarn lint
 - yarn build
-- yarn run check
 deploy:
 - provider: script
   skip-cleanup: true
