@@ -26,7 +26,7 @@ const request = requestFactory({
 })
 
 const vendor = 'Digital Eyewear'
-const baseUrl = 'https://www.malentille.com/' //authentification?back=my-account'
+const baseUrl = 'https://www.malentille.com/' // authentification?back=my-account'
 
 module.exports = new BaseKonnector(start)
 
