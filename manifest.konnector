@@ -1,11 +1,11 @@
 {
-  "version": "1.1.1",
+  "version": "1.2.0",
   "name": "Ma lentille",
   "type": "konnector",
   "language": "node",
   "icon": "icon.svg",
   "slug": "malentille",
-  "source": "git://github.com/konnectors/malentille.git",
+  "source": "git@github.com:konnectors/malentille.git",
   "editor": "Cozy",
   "vendor_link": "https://www.malentille.com/authentification",
   "categories": [
